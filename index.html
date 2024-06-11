@@ -9,6 +9,9 @@
     <meta name="description" content="Have fun with quiz game! Let's test your general knowledge!">
     <meta name="keywords" content="quiz game, general knowledge, fun, fun game">
 
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 
@@ -20,15 +23,18 @@
 
 <body>
 
+    <!--Headline-->
+    <div class="title-container">
+        <h1 class="title">Quiz Game</h1>
+    </div>
 
-    <!-- START QUIZ BUTTON -->
+    <!-- Start quiz button -->
     <div class="start-btn"><button>Start Game</button></div>
 
-    <!-- INFO BOX -->
+    <!-- Info Box -->
     <div class="info-box">
-        <div class="info-title">
-            <span>Rules of the Game</span>
-        </div>
+        <div class="info-title"><span>Rules of the Game</span></div>
+        <!-- List containing the rules -->
         <div class="info-list">
             <div class="info">1. You have <span>12 seconds</span> to answer each question.</div>
             <div class="info">2. Once you select , you can't reselect.</div>
@@ -37,29 +43,63 @@
             <div class="info">5. You'll get scores based on correct answers.</div>
         </div>
         <div class="buttons">
-            <button class="quit">Quit Game</button>
-            <button class="play-again">Play Again</button>
+            <button class="quit-btn">Quit Game</button>
+            <button class="restart-btn">Play Again</button>
         </div>
     </div>
     <!-- Quiz Box -->
     <div class="quiz-box">
+        <!-- Header for Currect Question and Timer-->
         <header>
-            <div class="title">Quiz Game</div>
-            <div class="timer">
-                <div class="time-text">Time Left</div>
-                <div class="timer-sec">12s</div>
+            <div class="question-count">Questions
+                <span id="current-questions">0</span>/<span id="total-question">5</span>
             </div>
+            <div class="timer">
+                <!--- Displaying Timer -->
+                <div class="time-text">Time</div>
+                <div class="timer-sec">12</div>
+            </div>
+            <div class="time-line"></div>
         </header>
+        <!-- Section for Question and Answers -->
+        <section>
+            <div class="quiz-container">
+                <h2 id="question">Questions are shown here</h2>
+                <div class="answer-options">
+                    <button class="answer-button">Option1</button>
+                    <button class="answer-button">Option2</button>
+                    <button class="answer-button">Option3</button>
+                    <button class="answer-button">Option4</button>
+                </div>
+            </div>
+        </section>
+        <!-- Footer for current Score -->
+        <footer>
+            <div class="current-score">
+                <div class="scores">Correct<span id="correct-score">0</span></div>
+                <div class="scores">Incorrect<span id="inrrect-score">0</span></div>
+            </div>
+        </footer>
     </div>
-    <section>
-        <div class="que-text">
-            <span></span>
+
+    <!-- Result Box-->
+    <div class="result-box">
+        <div class="result-title">Congratulations!<br>You are at the end!</div>
+        <div class="final-score"></div>
+        <!-- Buttons for restart or quit-->
+        <div class="buttons">
+            <button class="restart-btn">Play Again</button>
+            <button class="quit-btn">Quit Game</button>
         </div>
-    </section>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="laststamement">
+            <p>Hope you enjoyed the Game!</p>
+        </div>
+    </footer>
 
-
-
-
+    <!-- Javascript Files-->
     <script src="assets/js/script.js"></script>
 </body>
 
