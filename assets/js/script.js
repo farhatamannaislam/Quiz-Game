@@ -149,3 +149,6 @@ restartQuiz.onclick = ()=> {
 quitQuiz.onclick = ()=>{
   window.location.reload();
 }
+
+const nextBtn = document.querySelector("footer .next-btn");
+const bootmQuesCounter = document.querySelector("footer .total-ques");
