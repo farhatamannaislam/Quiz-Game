@@ -23,10 +23,6 @@
 
 <body>
 
-    <!--Headline-->
-    <div class="title-container">
-        <h1 class="title">Quiz Game</h1>
-    </div>
 
     <!-- Start quiz button -->
     <div class="start-btn"><button>Start Game</button></div>
@@ -51,56 +47,48 @@
     <div class="quiz-box">
         <!-- Header for Currect Question and Timer-->
         <header>
-            <div class="question-count">Questions
-                <span id="current-questions">0</span>/<span id="total-question">5</span>
-            </div>
+            <div class="title">Quiz Game</div>
             <div class="timer">
                 <!--- Displaying Timer -->
-                <div class="time-text">Time</div>
+                <div class="time-left">Time Left</div>
                 <div class="timer-sec">12</div>
             </div>
             <div class="time-line"></div>
         </header>
         <!-- Section for Question and Answers -->
         <section>
-            <div class="quiz-container">
-                <h2 id="question">Questions are shown here</h2>
-                <div class="answer-options">
-                    <button class="answer-button">Option1</button>
-                    <button class="answer-button">Option2</button>
-                    <button class="answer-button">Option3</button>
-                    <button class="answer-button">Option4</button>
-                </div>
+            <div class="ques-text">
+                <!-- Questions are found from JavaScript-->
+            </div>
+
+            <div class="option-list">
+                <!-- Answers are found from JavaScript-->
             </div>
         </section>
         <!-- Footer for current Score -->
         <footer>
-            <div class="current-score">
-                <div class="scores">Correct<span id="correct-score">0</span></div>
-                <div class="scores">Incorrect<span id="inrrect-score">0</span></div>
+            <div class="total-ques">
+                <!-- Count Number are found from JavaScript-->
             </div>
+            <button class="next-btn">Next Question</button>
         </footer>
     </div>
 
+
     <!-- Result Box-->
     <div class="result-box">
-        <div class="result-title">Congratulations!<br>You are at the end!</div>
-        <div class="final-score"></div>
-        <!-- Buttons for restart or quit-->
+        <div class="complete-text">
+            Congratulations! You've completed the Quiz!
+        </div>
+        <div class="score-text">
+            <!-- Score is found from Javascript-->
+        </div>
         <div class="buttons">
-            <button class="restart-btn">Play Again</button>
-            <button class="quit-btn">Quit Game</button>
+            <button class="restart">Play Again</button>
+            <button class="quit">Quit Game</button>
         </div>
     </div>
-    <!-- Footer -->
-    <footer class="page-footer">
-        <div class="laststamement">
-            <p>Hope you enjoyed the Game!</p>
-        </div>
-    </footer>
 
-    <!-- Javascript Files-->
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

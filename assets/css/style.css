@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
 
@@ -12,101 +11,296 @@ body {
     height: 100vh;
     width: 100%;
     background: url("../images/banner.webp") no-repeat center center/cover;
-    text-align: center;
- 
 }
 
-.start-btn, 
-.info-box {
+::selection {
+    /* Highlights the part of the document that has been clicked and dragged by the user */
+    color: #faebd7;
+    background-color: #517fb4;
+}
+
+/* Positioning all the boxes Absolute, in the center of the page */
+.start-btn,
+.info-box,
+.quiz-box,
+.result-box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(87, 84, 84, 0.8);
 }
 
-/* Start Game button Styling */
+/* Being able to control the boxes appearance and behavior transitions with JS 
+by adding an active class*/
+.info-box.activeInfo,
+.quiz-box.activeQuiz,
+.result-box.activeResult {
+    opacity: 1;
+    /* Make the elements visible */
+    z-index: 5;
+    /* Keeping the elements on top of the other elements */
+    pointer-events: auto;
+    /* Make the elements clickable */
+    transform: translate(-50%, -50%) scale(1);
+    /* Keep elements appearing in the center of the page */
+}
+
+/* START BUTTON */
 .start-btn button {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: bold;
+    color: #faebd7;
+    background: #721f72;
+    padding: 15px 30px;
+    border: 2px solid #3a3a3a;
     border-radius: 5px;
-    background: purple;
-    color:white;
-    padding: 1rem;
-    border: 1px solid rgb(43, 42, 42);
-}
-  
-.info-box {
-    display: none;
-    width: 550px;
-    background-color: aquamarine;
-    border-radius: 5px;
-    border: 1px solid rgb(43, 42, 42);
-    color: rgb(1, 27, 1);
-    padding: 1.5rem;
-    font-weight:500;
+    outline: none;
+    /* Remove the default focus style */
+    cursor: pointer;
+    /* Set cursor to pointer for better user interaction feedback */
 }
 
+/* INFO BOX */
+.info-box {
+    width: 90%;
+    max-width: 600px;
+    background: #faebd7;
+    opacity: 0;
+    transition: all 0.3s ease;
+    /* To make the transition smooth */
+    pointer-events: none;
+    /* Make the elements unclickable */
+    transform: translate(-50%, -50%) scale(0.9);
+    /* Giving the element a slightly smaller size than its original dimensions for visual effects */
+}
+
+/* Title styles of Info Box */
 .info-box .info-title {
     height: 60px;
     width: 100%;
-    border-bottom: 1px solid grey;
+    border-bottom: 1.5px solid #3a3a3a;
     display: flex;
-    padding: 0 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 5px 5px 0 0;
+    /* Keep the rounded corner effect */
+    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.2);
     font-size: 1.5rem;
-    font-weight:500;
-    color: rgb(1, 27, 1);
+    font-weight: 600;
 }
 
+/* Styles for the info text */
 .info-box .info-list {
-    padding: 1rem;
-} 
+    padding: 15px 20px;
+    line-height: 1.3;
+    /* Increase readability */
+    text-align: left;
+    font-size: 1.1rem;
+}
 
 .info-box .info-list .info {
-    margin:5px 0;
-    font-size:1rem;
+    font-size: 1rem;
+    color: #3a3a3a;
+    margin: 5px 0;
 }
 
+/* Highlight the important info in the text */
 .info-box .info-list .info span {
     font-weight: 600;
-    color: red;
+    color: #3f0c9c;
 }
 
+/* Styles for Exit and Continue Buttons */
 .info-box .buttons {
     height: 60px;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    padding: 0 2rem;
-    border-top: 1px solid grey;
+    align-items: center;
+    padding: 0 30px;
+    border-top: 2px solid #3a3a3a;
+    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.2);
 }
 
 .info-box .buttons button {
-    margin: 0 5px;
-    height: 2rem;
-    width: 50%;
-    color:white;
-    border: 1px solid rgb(43, 42, 42);
     font-size: 1rem;
+    font-weight: bold;
+    color: #faebd7;
+    background: #750663;
+    padding: 15px 20px;
+    border: 2px solid #3a3a3a;
     border-radius: 5px;
-    font-weight: 500;
+    outline: none;
+    /* Remove the default focus style */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.buttons button.quit {
-    color: red;
+.quiz-box {
+    width: 80%;
+    max-width: 700px;
+    top: 50%;
+    background: #faebd7;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    /* Make the elements unclickable */
+    transform: translate(-50%, -50%) scale(0.9);
+    box-shadow: 0 0 5px 5px rgb(58, 58, 58);
+    /* Gives a 3D effect behind the container*/
 }
 
-.buttons button.play-again {
-    color:green;
+/* Header in the Quiz box */
+.quiz-box header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    /* Position the timer */
+    z-index: 2;
+    /* Keeping the element on top of the other elements */
+    box-shadow: 0 3px 5px 1px rgba(58, 58, 58, 0.3);
 }
 
-.buttons button.quit:hover {
-    background: red;
-    color: white;
+.quiz-box header title {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
-.buttons button.play-again:hover {
-    color: white;
+/* Timer box */
+.quiz-box header .timer {
+    width: 145px;
+    /* Set a fixed width for the timer */
+    margin-left: auto;
+    /* Auto margin to push the timer to the right */
+    padding: 5px 10px;
+    border: 1.5px solid #3a3a3a;
+    border-radius: 5px;
+    background: #580747;
+    color: #faebd7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz-box header .timer .time-left {
+    font-weight: 400;
+    font-size: 1rem;
+    user-select: none;
+}
+
+.quiz-box header .timer .timer-sec {
+    font-weight: 500;
+    font-size: 1rem;
+    user-select: none;
+    height: 30px;
+    width: 45px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #580747;
+    color: #faebd7;
+    border: 1.5px solid #3a3a3a;
+}
+
+/* Timer Line - Animation in JS*/
+.quiz-box .time-line {
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    /* Position the line Absolute, at the bottom of header*/
+    bottom: 0;
+    left: 0;
+    background: #3f0335;
+}
+
+/* Main Section in the Quiz Box, Question and Answers */
+section {
+    padding: 25px 30px 20px 30px;
+    background: #d699d6;
+}
+
+section .ques-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+section .option-list {
+    display: block;
+    padding: 20px 0px;
+}
+
+
+section .option-list .option {
+    background: #d699d6;
+    border: 1.5px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section .option-list .option:last-child {
+    margin-bottom: 0px;
+}
+
+section .option-list .option:hover {
+    background: #faebd7;
+    color: #750663;
+    border: 1.5px solid #3a3a3a;
+}
+
+section .option-list .option.correct {
     background: green;
+    color:#faebd7;
+    border: 1.5px solid #3a3a3a;
 }
+
+section .option-list .option.incorrect {
+    background: red;
+    color:#faebd7;
+    border: 1.5px solid #3a3a3a;
+}
+
+
+section .option-list .option.disabled {
+   pointer-events: none;
+}
+
+/* Footer of Quiz box */
+footer {
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid #3a3a3a;
+    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.2);
+  }
+
+  footer .total-ques span {
+    display: flex;
+    user-select: none;
+  }
+
+  footer .total-ques span p {
+    font-weight: 500;
+    padding: 0 5px;
+  }
+
+  footer .total-ques span p:first-child {
+    padding-left: 0px;
+  }
