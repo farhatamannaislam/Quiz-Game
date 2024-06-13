@@ -170,13 +170,10 @@ let incorrect_Score = 0; // Number of incorrectly answered questions
 
 // Event handler for the start button click
 start_Btn.onclick = () => {
-  try {
     questions = shuffle(questions); // Shuffle the questions
     heading.classList.add("hide"); // Hide the heading element
     info_Box.classList.add("activeInfo"); // Show the information box
-  } catch (error) {
-    alert("Sorry some error is there!Please try again later!");
-  }
+  
 };
 
 
@@ -340,7 +337,7 @@ function selectAnswer(e) {
     }
     button.disabled = true;
   });
-  setTimeout(showNextQuestion, 1500); //Show next question after 1,5sec
+  setTimeout(showNextQuestion, 1000); //Show next question after 1,5sec
 }
 
 /**
