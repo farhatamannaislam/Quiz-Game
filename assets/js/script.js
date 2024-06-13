@@ -238,16 +238,33 @@ function optionSelected(answer) {
     answer.classList.add("incorrect"); //Add red to correct selected option
     console.log("Wrong Answer");
 
-    for(let i=0; i<all_Options;i++){
-      if(option_list.children[i].textContent == correct_Ans){
-        option_list.children[i].setAttribute("class","option correct"); //Add green to correct selected option
+    for (let i = 0; i < all_Options; i++) {
+      if (option_list.children[i].textContent == correct_Ans) {
+        option_list.children[i].setAttribute("class", "option correct"); //Add green to correct selected option
         console.log("Auto selected correct answer");
       }
     }
   }
-for(let i=0; i<all_Options;i++)
-  {
+  for (let i = 0; i < all_Options; i++) {
     option_list.children[i].classList.add("disabled"); //Once user selets an options other options are disabled
   }
   nextBtn.classList.add("show"); //Show next button
+}
+
+function showResult() {
+  infoBox.classList.remove("activeInfo"); //Hide info box
+  quizBox.classList.remove("activeQuiz"); //Hide quiz box
+  resultBox.classList.add("activeResult"); //Show result box
+  const score_Text = resultBox.querySelector("score-text");
+  if (user_Score > 5) { //if user scores more than 3 
+    //Create new span
+    let scoreTag = '<span>and Congratulations! You got <p>' + user_Score + '</p> out of <p>' + questions.length + '</p></span>';
+    score_Text.innerHTML = scoreTag;
+  } else if (user_Score > 3) { //if you score more than 3
+    let scoreTag = '<span>and Nice! You got <p>' + user_Score + '</p> out of <p>' + questions.length + '</p></span>';
+    score_Text.innerHTML = scoreTag;
+  } else {
+    let scoreTag = '<span>and Sorry! You got <p>' + user_Score + '</p> out of <p>' + questions.length + '</p></span>';
+    score_Text.innerHTML = scoreTag;
+  }
 }
