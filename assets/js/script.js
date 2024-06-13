@@ -205,21 +205,49 @@ function showQuestions(index) {
 
   //Create a new span and div tag for question and optionand passing the value using array index
 
-  let queTag = '<span>'+questions[index].numb+". "+questions[index].question+'</span>';
-  let optionTag = '<div class = "option"><span>'+questions[index].options[0]+'</span></div>'
-  + '<div class = "option"><span>'+questions[index].options[1]+'</span></div>'
-  + '<div class = "option"><span>'+questions[index].options[2]+'</span></div>'
-  + '<div class = "option"><span>'+questions[index].options[3]+'</span></div>';
-     queText.innerHTML = queTag; //Add new span tag inside queTag
-     option_list.innerHTML = optionTag; //Add new div tag inside option tag
-     const option =option_list.querySelector(".option");
+  let queTag = '<span>' + questions[index].numb + ". " + questions[index].question + '</span>';
+  let optionTag = '<div class = "option"><span>' + questions[index].options[0] + '</span></div>' +
+    '<div class = "option"><span>' + questions[index].options[1] + '</span></div>' +
+    '<div class = "option"><span>' + questions[index].options[2] + '</span></div>' +
+    '<div class = "option"><span>' + questions[index].options[3] + '</span></div>';
+  queText.innerHTML = queTag; //Add new span tag inside queTag
+  option_list.innerHTML = optionTag; //Add new div tag inside option tag
+  const option = option_list.querySelector(".option");
 
-     //set onclick attribute to all available options
-     for (let i=0; i<option.length;i++)
-      {
-        option[i].setAtrribute("onclick","optioSelected(this)");
-      }
+  //set onclick attribute to all available options
+  for (let i = 0; i < option.length; i++) {
+    option[i].setAtrribute("onclick", "optioSelected(this)");
+  }
 }
 
+//When user clicks an option
+function optionSelected(answer) {
+  clearInterval(counter);
+  clearInterval(counter_Line);
+  let user_Ans = answer.textContent; //Get user selected option
+  let correct_Ans = questions[queCount].answer; //Get correct answer from array
+  const all_Options = option_list.children.length; //Get all optins items
 
+  if (user_Ans == correct_Ans) { //If user seleted option is equal to correct answer
+    user_Score += 1; //Update score with 1
+    answer.classList.add("correct"); //Add green to correct selected option
+    console.log("Correct Answer");
+    console.log("Your correct answers = " + user_Score);
 
+  } else {
+    answer.classList.add("incorrect"); //Add red to correct selected option
+    console.log("Wrong Answer");
+
+    for(let i=0; i<all_Options;i++){
+      if(option_list.children[i].textContent == correct_Ans){
+        option_list.children[i].setAttribute("class","option correct"); //Add green to correct selected option
+        console.log("Auto selected correct answer");
+      }
+    }
+  }
+for(let i=0; i<all_Options;i++)
+  {
+    option_list.children[i].classList.add("disabled"); //Once user selets an options other options are disabled
+  }
+  nextBtn.classList.add("show"); //Show next button
+}
