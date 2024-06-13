@@ -14,320 +14,310 @@ body {
 }
 
 ::selection {
-    /* Highlights the part of the document that has been clicked and dragged by the user */
-    color: #faebd7;
-    background-color: #517fb4;
+    color: #fff;
+    background: #6a1280;
 }
 
-/* Positioning all the boxes Absolute, in the center of the page */
-.start-btn,
-.info-box,
-.quiz-box,
-.result-box {
+/* HEADING */
+.title-container {
+    margin: 60px 5%;
+    padding: 15px;
+    background-color: #420542;
+    color: white;
+    border-style: solid;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(59, 59, 59, 0.8);
+}
+
+.start_btn,
+.info_box,
+.quiz_box,
+.result_box {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(87, 84, 84, 0.8);
+    box-shadow: 0 5px 10px rgb(58, 58, 58, 0.8);
 }
 
-/* Being able to control the boxes appearance and behavior transitions with JS 
-by adding an active class*/
-.info-box.activeInfo,
-.quiz-box.activeQuiz,
-.result-box.activeResult {
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult {
     opacity: 1;
-    /* Make the elements visible */
     z-index: 5;
-    /* Keeping the elements on top of the other elements */
     pointer-events: auto;
-    /* Make the elements clickable */
     transform: translate(-50%, -50%) scale(1);
-    /* Keep elements appearing in the center of the page */
 }
 
-/* START BUTTON */
-.start-btn button {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #faebd7;
-    background: #721f72;
+.start_btn button {
+    font-size: 25px;
+    font-weight: 500;
+    color: #efe9f0;
     padding: 15px 30px;
-    border: 2px solid #3a3a3a;
-    border-radius: 5px;
     outline: none;
-    /* Remove the default focus style */
+    border: none;
+    border-radius: 5px;
+    background: #33022d;
     cursor: pointer;
-    /* Set cursor to pointer for better user interaction feedback */
 }
 
-/* INFO BOX */
-.info-box {
-    width: 90%;
-    max-width: 600px;
-    background: #faebd7;
-    opacity: 0;
-    transition: all 0.3s ease;
-    /* To make the transition smooth */
-    pointer-events: none;
-    /* Make the elements unclickable */
+.info_box {
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
-    /* Giving the element a slightly smaller size than its original dimensions for visual effects */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: #efe9f0;
+    background: #33022d;
 }
 
-/* Title styles of Info Box */
-.info-box .info-title {
+.info_box .info-title {
     height: 60px;
     width: 100%;
-    border-bottom: 1.5px solid #3a3a3a;
+    border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 20px;
+    padding: 0 30px;
     border-radius: 5px 5px 0 0;
-    /* Keep the rounded corner effect */
-    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.2);
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 600;
 }
 
-/* Styles for the info text */
-.info-box .info-list {
-    padding: 15px 20px;
-    line-height: 1.3;
-    /* Increase readability */
-    text-align: left;
-    font-size: 1.1rem;
+.info_box .info-list {
+    padding: 15px 30px;
 }
 
-.info-box .info-list .info {
-    font-size: 1rem;
-    color: #3a3a3a;
+.info_box .info-list .info {
     margin: 5px 0;
+    font-size: 17px;
 }
 
-/* Highlight the important info in the text */
-.info-box .info-list .info span {
+.info_box .info-list .info span {
     font-weight: 600;
-    color: #3f0c9c;
+    color: #c184c7;
 }
 
-/* Styles for Exit and Continue Buttons */
-.info-box .buttons {
+.info_box .buttons {
     height: 60px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     padding: 0 30px;
-    border-top: 2px solid #3a3a3a;
-    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.2);
+    border-top: 1px solid lightgrey;
 }
 
-.info-box .buttons button {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #faebd7;
-    background: #750663;
-    padding: 15px 20px;
-    border: 2px solid #3a3a3a;
-    border-radius: 5px;
-    outline: none;
-    /* Remove the default focus style */
+.info_box .buttons button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #576069;
     transition: all 0.3s ease;
 }
 
-.quiz-box {
-    width: 80%;
-    max-width: 700px;
-    top: 50%;
-    background: #faebd7;
-    opacity: 0;
-    transition: all 0.3s ease;
-    pointer-events: none;
-    /* Make the elements unclickable */
+.quiz_box {
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
-    box-shadow: 0 0 5px 5px rgb(58, 58, 58);
-    /* Gives a 3D effect behind the container*/
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 
-/* Header in the Quiz box */
-.quiz-box header {
+.quiz_box header {
+    position: relative;
+    z-index: 2;
     height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
-    border-radius: 5px 5px 0 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    position: relative;
-    /* Position the timer */
-    z-index: 2;
-    /* Keeping the element on top of the other elements */
-    box-shadow: 0 3px 5px 1px rgba(58, 58, 58, 0.3);
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
 }
 
-.quiz-box header .title {
-    font-size: 1.25rem;
+.quiz_box header .title {
+    font-size: 20px;
     font-weight: 600;
 }
 
-/* Timer box */
-.quiz-box header .timer {
-    width: 145px;
-    /* Set a fixed width for the timer */
-    margin-left: auto;
-    /* Auto margin to push the timer to the right */
-    padding: 5px 10px;
-    border: 1.5px solid #3a3a3a;
+.quiz_box header .timer {
+    color: #280329;
+    background: #fff;
+    border: 1px solid lightgray;
+    height: 45px;
+    padding: 0 8px;
     border-radius: 5px;
-    background: #580747;
-    color: #faebd7;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 145px;
 }
 
-.quiz-box header .timer .time-left {
+.quiz_box header .timer .time_left_txt {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 17px;
     user-select: none;
 }
 
-.quiz-box header .timer .timer-sec {
+.quiz_box header .timer .timer_sec {
+    font-size: 18px;
     font-weight: 500;
-    font-size: 1rem;
-    user-select: none;
     height: 30px;
     width: 45px;
+    color: #fff;
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #580747;
-    color: #faebd7;
-    border: 1.5px solid #3a3a3a;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
 }
 
-/* Timer Line - Animation in JS*/
-.quiz-box .time-line {
-    height: 4px;
-    width: 100%;
+.quiz_box header .time_line {
     position: absolute;
-    /* Position the line Absolute, at the bottom of header*/
-    bottom: 0;
-    left: 0;
-    background: #3f0335;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #500850;
 }
 
-/* Main Section in the Quiz Box, Question and Answers */
 section {
     padding: 25px 30px 20px 30px;
-    background: #d699d6;
+    background: #fff;
 }
 
-section .ques-text {
-    font-size: 1.5rem;
+section .que_text {
+    font-size: 25px;
     font-weight: 600;
 }
 
-section .option-list {
-    display: block;
+section .option_list {
     padding: 20px 0px;
+    display: block;
 }
 
-
-section .option-list .option {
-    background: #d699d6;
-    border: 1.5px solid #3a3a3a;
+section .option_list .option {
+    background: rgb(227, 204, 231);
+    border: 1px solid lightgray;
     border-radius: 5px;
     padding: 8px 15px;
-    font-size: 1rem;
+    font-size: 17px;
     margin-bottom: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    color:#250225;
 }
 
-section .option-list .option:last-child {
+section .option_list .option:last-child {
     margin-bottom: 0px;
 }
 
-section .option-list .option:hover {
-    background: #faebd7;
-    color: #750663;
-    border: 1.5px solid #3a3a3a;
+section .option_list .option:hover {
+    color: #fff;
+    background: #b344ab;;
+    border: 1px solid lightgray;
 }
 
-section .option-list .option.correct {
-    background: green;
-    color: #faebd7;
-    border: 1.5px solid #3a3a3a;
+section .option_list .option.correct {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
 }
 
-section .option-list .option.incorrect {
-    background: red;
-    color: #faebd7;
-    border: 1.5px solid #3a3a3a;
+section .option_list .option.incorrect {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
 }
 
-
-section .option-list .option.disabled {
+section .option_list .option.disabled {
     pointer-events: none;
 }
 
-/* Footer of Quiz box */
-footer {
-    height: 60px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1.5px solid #3a3a3a;
-    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.2);
+section .option_list .option .icon {
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    line-height: 24px;
 }
 
-footer .total-ques span {
+.option_list .option .icon.tick {
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+.option_list .option .icon.cross {
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+
+footer {
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span {
     display: flex;
     user-select: none;
 }
 
-footer .total-ques span p {
+footer .total_que span p {
     font-weight: 500;
     padding: 0 5px;
 }
 
-footer .total-ques span p:first-child {
+footer .total_que span p:first-child {
     padding-left: 0px;
 }
 
 footer button {
     height: 40px;
-    padding: 0 10px;
-    font-size: 1rem;
+    padding: 0 13px;
+    font-size: 18px;
     font-weight: 400;
     cursor: pointer;
     border: none;
     outline: none;
-    color: #faebd7;
-    background: #721f72;
-    outline: none;
+    color: #fff;
     border-radius: 5px;
-    border: 1.5px solid #3a3a3a;
+    background: #b344ab;
+    border: 1px solid lightgrey;
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
     transform: scale(0.95);
     transition: all 0.3s ease;
-
 }
 
 footer button:hover {
-    background: #694b69;
+    color: #b344ab;
+    background: white;
 }
 
 footer button.show {
@@ -336,74 +326,79 @@ footer button.show {
     transform: scale(1);
 }
 
-/* RESULT BOX */
-
-.result-box {
-    top: 50%;
-    width: 85%;
-    max-width: 600px;
-    background: #faebd7;
-    padding: 20px 30px;
+.result_box {
+    background: #fff;
+    border-radius: 5px;
     display: flex;
-    flex-direction: column;
+    padding: 25px 30px;
+    width: 450px;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-    transform: translate(-50%, -50%) scale(0.9);
-    box-shadow: 0 0 5px 5px rgba(58, 58, 58, 0.5);
 }
 
-.result-box .complete-text {
-    font-size: 1.25rem;
+.result_box .icon {
+    font-size: 100px;
+    color: #250225;
+    margin-bottom: 10px;
+}
+
+.result_box .complete_text {
+    font-size: 20px;
     font-weight: 500;
 }
 
-.result-box .score-text span {
+.result_box .score_text span {
     display: flex;
     margin: 10px 0;
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 500;
 }
 
-.result-box .score-text span p {
+.result_box .score_text span p {
     padding: 0 4px;
     font-weight: 600;
 }
 
-.result-box .buttons {
+.result_box .buttons {
     display: flex;
     margin: 20px 0;
 }
 
-.result-box .buttons button{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #faebd7;
-    background: #7e0f82;
+.result_box .buttons button {
     margin: 0 10px;
-    padding: 15px 20px;
-    border: 1.5px solid #3a3a3a;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
     cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-top: 1px solid lightgrey;
+    transition: all 0.3s ease;
 }
 
-.buttons button .restart {
-    background-color: palevioletred;
-    color: #faebd7;
+.buttons button.restart {
+    color: white;
+    background: #b344ab;
 }
 
-.buttons button .restart:hover {
-    background-color: rgb(219, 66, 117);
+.buttons button.restart:hover {
+    color: #b344ab;
+    background: white;
 }
 
-.buttons button .quit {
-    background-color: rgb(116, 19, 19);
-    color: #faebd7;
+.buttons button.quit {
+    color: white;
+    background: #b344ab;
 }
 
-.buttons button .restart:hover {
-    background-color: rgb(65, 4, 7);
+.buttons button.quit:hover {
+    color: #b344ab;
+    background: white;
 }

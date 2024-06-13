@@ -23,73 +23,76 @@
 
 <body>
 
+    <!-- HEADING -->
 
-    <!-- Start quiz button -->
-    <div class="start-btn"><button>Start Game</button></div>
+    <div class="title-container">
+        <h1 class="title">Quiz Game</h1>
+    </div>
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
 
     <!-- Info Box -->
-    <div class="info-box">
-        <div class="info-title"><span>Rules of the Game</span></div>
-        <!-- List containing the rules -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
         <div class="info-list">
-            <div class="info">1. You have <span>12 seconds</span> to answer each question.</div>
-            <div class="info">2. Once you select , you can't reselect.</div>
-            <div class="info">3. You can not selecet after time runs out.</div>
-            <div class="info">4. You can't excape from the game while playing.</div>
-            <div class="info">5. You'll get scores based on correct answers.</div>
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
         </div>
         <div class="buttons">
-            <button class="quit-btn">Exit Game</button>
-            <button class="restart-btn">Continue</button>
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
         </div>
     </div>
-    <!-- Quiz Box -->
-    <div class="quiz-box">
-        <!-- Header for Currect Question and Timer-->
-        <header>
-            <div class="title">Quiz Game</div>
-            <div class="timer">
-                <!--- Displaying Timer -->
-                <div class="time-left">Time Left</div>
-                <div class="timer-sec">12</div>
-            </div>
-            <div class="time-line"></div>
-        </header>
-        <!-- Section for Question and Answers -->
-        <section>
-            <div class="ques-text">
-                <!-- Questions are found from JavaScript-->
-            </div>
 
-            <div class="option-list">
-                <!-- Answers are found from JavaScript-->
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
             </div>
         </section>
-        <!-- Footer for current Score -->
+
+        <!-- footer of Quiz Box -->
         <footer>
-            <div class="total-ques">
-                <!-- Count Number are found from JavaScript-->
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
             </div>
-            <button class="next-btn">Next Question</button>
+            <button class="next_btn">Next Que</button>
         </footer>
     </div>
 
-
-    <!-- Result Box-->
-    <div class="result-box">
-        <div class="complete-text">
-            Congratulations! You've completed the Quiz!
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
         </div>
-        <div class="score-text">
-            <!-- Score is found from Javascript-->
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
         </div>
         <div class="buttons">
-            <button class="restart">Play Again</button>
-            <button class="quit">Quit Game</button>
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
         </div>
     </div>
-  <!-- Javascript Files-->
-  <script src="assets/js/script.js"></script>
+
+    <!-- Javascript Files-->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
