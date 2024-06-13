@@ -174,7 +174,7 @@ start_Btn .onclick = () => {
     heading.classList.add("hide"); // Hide the heading element
     info_Box.classList.add("activeInfo"); // Show the information box
   } catch (error) {
-    alert("Sorry som error is there!Please try again later!");
+    alert("Sorry some error is there!Please try again later!");
   }
 };
 
@@ -228,8 +228,8 @@ function shuffle(array) {
 function showQuestions() {
   resetState(); // Remove the previous answer options
 
-  let currentQuestion = questions[currentQuestionIndex];
-  let questionNumber = currentQuestionIndex + 1;
+  let currentQuestion = questions[currentQuestionIndex]; //Get the current questins with index from 0 to 6
+  let questionNumber = currentQuestionIndex + 1; //Question no is always 1 ahead of index
 
   question.innerHTML = questionNumber + ". " + currentQuestion.question;
   document.getElementById("current-question").textContent = questionNumber; // Update the current question number in the span
@@ -367,11 +367,11 @@ function showResult() {
   let scoreMessage;
   // Determine the score message based on the number of correct answers
   if (correct_Score <= 3) {
-    scoreMessage = '<span>You did<div>' + correct_Score + ' out of ' + questions.length + '</div><div>Better luck next time!</div></span>';
+    scoreMessage = '<span>You scored<div>' + correct_Score + ' out of ' + questions.length + '</div><div>Better luck next time!</div></span>';
   } else if (correct_Score >= 4 && correct_Score <= 6) {
-    scoreMessage = '<span>You did<div>' + correct_Score + ' out of ' + questions.length + '</div><div>Good job! <br> You did really well!</div></span>';
+    scoreMessage = '<span>You scored<div>' + correct_Score + ' out of ' + questions.length + '</div><div>Good job! <br> You did really well!</div></span>';
   } else if (correct_Score >= 7 ) {
-    scoreMessage = '<span>You did<div>' + correct_Score + ' out of ' + questions.length + '</div><div>AWESOME! <br> Excellent!</div></span>';
+    scoreMessage = '<span>You scored<div>' + correct_Score + ' out of ' + questions.length + '</div><div>AWESOME! <br> Excellent!</div></span>';
   }
   finalScoreElement.innerHTML = scoreMessage;
 }
