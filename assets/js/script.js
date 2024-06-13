@@ -268,3 +268,33 @@ function showResult() {
     score_Text.innerHTML = scoreTag;
   }
 }
+
+function startTimer(time) {
+  counter = setInterval(timer, 1000);
+
+  function timer() {
+    timeCount.textContent = time; //change value of timeCount with time value
+    time--;
+    if (time < 9) {
+      let add_Zero = timeCount.textContent;
+      timeCount.textContent = "0" + add_Zero; //add 0 before time value
+    }
+    if (time < 0) {
+      clearInterval(counter); //clear counter
+      timeText.textContent = "Time off"; //Change time text to time off
+      const all_Options = option_list.children.length; //Get all option
+      let correct_Ans = questions[queCount].answer; //Get correct answer from array
+      for (let i = 0; all_Options; i++) {
+        if (option_list.children[i].textContent == correct_Ans) {
+          option_list.children[i].setAttribute("class", "option correct"); //Add green color to matched option
+          console.log("Time off: Auto selected correct answer")
+        }
+      }
+      for (let i = 0; i < all_Options; i++) {
+        option_list.children[i].classList.add("disabled"); //Once user selects an option opther options are disabled
+      }
+
+      nextBtn.classList.add("show");
+    }
+  }
+}
