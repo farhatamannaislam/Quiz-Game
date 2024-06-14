@@ -170,10 +170,10 @@ let incorrect_Score = 0; // Number of incorrectly answered questions
 
 // Event handler for the start button click
 start_Btn.onclick = () => {
-    questions = shuffle(questions); // Shuffle the questions
-    heading.classList.add("hide"); // Hide the heading element
-    info_Box.classList.add("activeInfo"); // Show the information box
-  
+  questions = shuffle(questions); // Shuffle the questions
+  heading.classList.add("hide"); // Hide the heading element
+  info_Box.classList.add("activeInfo"); // Show the information box
+
 };
 
 
@@ -291,7 +291,7 @@ function startTimer() {
 
 
 /**
- * Initializes the timer line and updates its width until reaching 100% or when an answer is selected.
+ * Initializes the timer line and updates its width.
  * Stops the timer when the width reaches 100% or when an answer is selected.
  */
 function starttimer_Line() {
