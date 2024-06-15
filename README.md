@@ -6,6 +6,8 @@ interest in learning similar general knowledge.
 There are seven questions mostly about geography. This is a nice way in the beginning of learning.
 The live link can be found here [The Quiz Game](https://farhatamannaislam.github.io/Quiz-Game/)
 
+ <img alt="Quiz Game" src="docs/readme_images/responsitor.png">
+
 # Features
 
 ## Home Page
