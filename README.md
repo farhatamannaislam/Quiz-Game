@@ -8,6 +8,19 @@ The live link can be found here [The Quiz Game](https://farhatamannaislam.github
 
  <img alt="Quiz Game" src="docs/readme_images/responsitor.png">
 
+
+# Wirreframes
+
+<details>
+
+<summary></summary>
+
+### Desktop Wireframe 
+
+ <img alt="Quiz Game" src="docs/wireframe/desktopwireframe1.png">
+
+</details>
+
 # Features
 
 ## Home Page
@@ -22,7 +35,7 @@ The live link can be found here [The Quiz Game](https://farhatamannaislam.github
 * Here the user gets the instructions about how to play the game.
 * After that the user gets two buttons with options either continue the game or exit.
 
-<img alt="Rules of the game" src="docs/readme_images/rules.png">
+      <img alt="Rules of the game" src="docs/readme_images/rules.png">
 
 ## Continue
 
@@ -46,7 +59,11 @@ answer options.
 * The user can continue to play again. Each time the game starts the questions and answers are shuffled.
 * If the user chooses Quit Quiz again the Game will be redirected to home Page.
 
-<img alt="Result Box" src="docs/readme_images/result.png">
+      <img alt="Result Box" src="docs/readme_images/result.png">
+
+
+# Testing
+
 
 
 
