@@ -174,19 +174,19 @@ There are no known bugs in the game.
 
 ## Frameworks - Libraries - Programs Used
 
-* [Am I Responsive]() Used to verify responsiveness of website on different devices.
-* [Responsitor]() Used to verify responsiveness of website on different devices.
-* [Balsamiq]() Used to generate Wireframe images.
-* [Chrome Dev Tools]() Used for overall development and tweaking, including testing responsiveness and performance.
-* [Font Awesome]()  Used for icons.
-* [GitHub]() Used for version control and hosting.
-* [Google Fonts]() Used to import and alter fonts on the page.
-* [TinyPNG]() Used to optimize image for website.
-* [Convertio]() Used to optimize image for website.
-* [W3C]()Used for HTML & CSS Validation.
-* [JSHint]() Used for JavaScript Validation.
-* [Pixabay]() Used for the website image.
-* [Flaticon]() Used for website favicon.
+* [Am I Responsive](https://ui.dev/amiresponsive) Used to verify responsiveness of website on different devices.
+* [Responsitor](http://www.responsinator.com/) Used to verify responsiveness of website on different devices.
+* [Balsamiq](https://balsamiq.cloud/swthgpw/pdp23pa/rA7C7) Used to generate Wireframe images.
+* [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) Used for overall development and tweaking, including testing responsiveness and performance.
+* [Font Awesome](https://fontawesome.com/)  Used for icons.
+* [GitHub](https://github.com/) Used for version control and hosting.
+* [Google Fonts](https://fonts.google.com/) Used to import and alter fonts on the page.
+* [TinyPNG](https://tinypng.com/) Used to optimize image for website.
+* [Convertio](https://convertio.co/) Used to optimize image for website.
+* [W3C](https://www.w3.org/)Used for HTML & CSS Validation.
+* [JSHint](https://jshint.com/) Used for JavaScript Validation.
+* [Pixabay](https://pixabay.com/images/search/free%20images/) Used for the website image.
+* [Flaticon](https://www.flaticon.com/free-icon/chef_1980708?term=chef&page=1&position=34&origin=search&related_id=1980708) Used for website favicon.
 
 
 
