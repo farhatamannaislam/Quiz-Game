@@ -160,6 +160,34 @@ answer options.
      [Responsitor](http://www.responsinator.com/?url=https%3A%2F%2Ffarhatamannaislam.github.io%2FQuiz-Game%2F)
      [Am I Resonsive](https://ui.dev/amiresponsive?url=https://farhatamannaislam.github.io/Quiz-Game/)
 
+# Known Bugs
+
+There are no known bugs in the game.
+
+# Technologies Used
+
+## Languages
+
+* JavaScript
+* HTML5
+* CSS3
+
+## Frameworks - Libraries - Programs Used
+
+* [Am I Responsive]() Used to verify responsiveness of website on different devices.
+* [Responsitor]() Used to verify responsiveness of website on different devices.
+* [Balsamiq]() Used to generate Wireframe images.
+* [Chrome Dev Tools]() Used for overall development and tweaking, including testing responsiveness and performance.
+* [Font Awesome]()  Used for icons.
+* [GitHub]() Used for version control and hosting.
+* [Google Fonts]() Used to import and alter fonts on the page.
+* [TinyPNG]() Used to optimize image for website.
+* [Convertio]() Used to optimize image for website.
+* [W3C]()Used for HTML & CSS Validation.
+* [JSHint]() Used for JavaScript Validation.
+* [Pixabay]() Used for the website image.
+* [Flaticon]() Used for website favicon.
+
 
 
 
