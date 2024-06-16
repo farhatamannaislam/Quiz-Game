@@ -13,11 +13,55 @@ The live link can be found here [The Quiz Game](https://farhatamannaislam.github
 
 <details>
 
-<summary></summary>
+<summary>Desktop Wireframe</summary>
 
-### Desktop Wireframe 
+ <img alt="Desktop wireframe" src="docs/wireframe/desktopwireframe1.png">
 
- <img alt="Quiz Game" src="docs/wireframe/desktopwireframe1.png">
+</details>
+
+<details>
+
+<summary>Desktop Wireframe</summary>
+
+ <img alt="Desktop wireframe" src="docs/wireframe/desktopwireframe2.png">
+
+</details>
+
+<details>
+
+<summary>Desktop Wireframe</summary>
+
+ <img alt="Desktop wireframe" src="docs/wireframe/desktopwireframe3.png">
+
+</details>
+
+<summary>Desktop Wireframe</summary>
+
+ <img alt="Desktop wireframe" src="docs/wireframe/dektopwireframe4.png">
+
+</details>
+
+<summary>Mobile Wireframe</summary>
+
+ <img alt="Desktop wireframe" src="docs/wireframe/mobilewireframe1.png">
+
+</details>
+
+<summary>Mobile Wireframe</summary>
+
+ <img alt="Desktop wireframe" src="docs/wireframe/mobilewireframe2.png">
+
+</details>
+
+<summary>Mobile Wireframe</summary>
+
+ <img alt="Desktop wireframe" src="docs/wireframe/mobilewireframe3.png">
+
+</details>
+
+<summary>Mobile Wireframe</summary>
+
+ <img alt="Desktop wireframe" src="docs/wireframe/mobilewireframe4.png">
 
 </details>
 
