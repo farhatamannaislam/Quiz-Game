@@ -89,7 +89,7 @@ The live link can be found here [The Quiz Game](https://farhatamannaislam.github
 * Here the user gets the instructions about how to play the game.
 * After that the user gets two buttons with options either continue the game or exit.
 
-      <img alt="Rules of the game" src="docs/readme_images/rules.png">
+  <img alt="Rules of the game" src="docs/readme_images/rules.png">
 
 ## Continue
 
@@ -113,7 +113,7 @@ answer options.
 * The user can continue to play again. Each time the game starts the questions and answers are shuffled.
 * If the user chooses Quit Quiz again the Game will be redirected to home Page.
 
-      <img alt="Result Box" src="docs/readme_images/result.png">
+  <img alt="Result Box" src="docs/readme_images/result.png">
 
 
 # Testing
@@ -157,8 +157,8 @@ answer options.
 * The website was viewed on a variety of devices such as Desktop, Laptop, Smartphone to ensure responsiveness on various screen sizes in both portrait and landscape mode.
 
 * Responiveness has been tested by following websites:
-     -[Responsitor](http://www.responsinator.com/?url=https%3A%2F%2Ffarhatamannaislam.github.io%2FQuiz-Game%2F)
-     -[Am I Resonsive](https://ui.dev/amiresponsive?url=https://farhatamannaislam.github.io/Quiz-Game/)
+     [Responsitor](http://www.responsinator.com/?url=https%3A%2F%2Ffarhatamannaislam.github.io%2FQuiz-Game%2F)
+     [Am I Resonsive](https://ui.dev/amiresponsive?url=https://farhatamannaislam.github.io/Quiz-Game/)
 
 
 
