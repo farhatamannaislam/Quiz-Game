@@ -131,8 +131,34 @@ answer options.
 
 
 ### Javascript
-* No errors or warnings were returned when passing through the the [JSHint Validator] (https://jshint.com/)
+* No errors or warnings were returned when passing through the the [JSHint Validator](https://jshint.com/)
         <img alt="JSHint Validator" src="docs/readme_images/JSHint.png">
+
+## Accessibility
+
+* The site achieved a Lighthouse accessibility score of 100% which confirms that the colours and fonts chosen are easy to read and accessible.
+
+<img alt="Accessibility" src="docs/readme_images/accessibility.png">
+
+## Button Testing
+
+* All buttons were tested manually to ensure the user is directed to the correct section of the website and functions run as intended.
+
+## Game testing
+
+* The Game was played by multiple people several times to ensure that it works correctly.
+
+## Browser Testing
+
+* The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
+
+## Device Testing
+
+* The website was viewed on a variety of devices such as Desktop, Laptop, Smartphone to ensure responsiveness on various screen sizes in both portrait and landscape mode.
+
+* Responiveness has been tested by following websites:
+     -[Responsitor](http://www.responsinator.com/?url=https%3A%2F%2Ffarhatamannaislam.github.io%2FQuiz-Game%2F)
+     -[Am I Resonsive](https://ui.dev/amiresponsive?url=https://farhatamannaislam.github.io/Quiz-Game/)
 
 
 
