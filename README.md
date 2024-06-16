@@ -35,11 +35,15 @@ The live link can be found here [The Quiz Game](https://farhatamannaislam.github
 
 </details>
 
+<details>
+
 <summary>Desktop Wireframe</summary>
 
  <img alt="Desktop wireframe" src="docs/wireframe/dektopwireframe4.png">
 
 </details>
+
+<details>
 
 <summary>Mobile Wireframe</summary>
 
@@ -47,17 +51,23 @@ The live link can be found here [The Quiz Game](https://farhatamannaislam.github
 
 </details>
 
+<details>
+
 <summary>Mobile Wireframe</summary>
 
  <img alt="Mobile wireframe" src="docs/wireframe/mobilewireframe2.png">
 
 </details>
 
+<details>
+
 <summary>Mobile Wireframe</summary>
 
  <img alt="Mobile wireframe" src="docs/wireframe/mobilewireframe3.png">
 
 </details>
+
+<details>
 
 <summary>Mobile Wireframe</summary>
 
