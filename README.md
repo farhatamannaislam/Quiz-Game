@@ -43,25 +43,25 @@ The live link can be found here [The Quiz Game](https://farhatamannaislam.github
 
 <summary>Mobile Wireframe</summary>
 
- <img alt="Desktop wireframe" src="docs/wireframe/mobilewireframe1.png">
+ <img alt="Mobile wireframe" src="docs/wireframe/mobilewireframe1.png">
 
 </details>
 
 <summary>Mobile Wireframe</summary>
 
- <img alt="Desktop wireframe" src="docs/wireframe/mobilewireframe2.png">
+ <img alt="Mobile wireframe" src="docs/wireframe/mobilewireframe2.png">
 
 </details>
 
 <summary>Mobile Wireframe</summary>
 
- <img alt="Desktop wireframe" src="docs/wireframe/mobilewireframe3.png">
+ <img alt="Mobile wireframe" src="docs/wireframe/mobilewireframe3.png">
 
 </details>
 
 <summary>Mobile Wireframe</summary>
 
- <img alt="Desktop wireframe" src="docs/wireframe/mobilewireframe4.png">
+ <img alt="Mobile wireframe" src="docs/wireframe/mobilewireframe4.png">
 
 </details>
 
