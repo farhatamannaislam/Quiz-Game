@@ -118,7 +118,21 @@ answer options.
 
 # Testing
 
+## Validator Testing
 
+### HTML
+* No errors were returned when passing through the official W3C Markup Validator.
+        [W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffarhatamannaislam.github.io%2FQuiz-Game%2F)
+
+
+### CSS
+* No errors were found when passing through the official W3C CSS Validator.
+        [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffarhatamannaislam.github.io%2FQuiz-Game%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+
+### Javascript
+* No errors or warnings were returned when passing through the the [JSHint Validator] (https://jshint.com/)
+        <img alt="JSHint Validator" src="docs/readme_images/JSHint.png">
 
 
 
