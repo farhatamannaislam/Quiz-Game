@@ -141,6 +141,10 @@ let questions = [{
   },
 ];
 
+/**
+ * The idea of this JavaScript functions are taken from Ali Aslan, Great Stack and Mushroom Quiz
+ */
+
 // Selected DOM elements
 const heading = document.querySelector(".title-container");
 const start_Btn = document.querySelector(".start-btn button");
