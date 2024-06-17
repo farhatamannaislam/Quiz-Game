@@ -71,6 +71,7 @@ body {
     cursor: pointer;
 }
 
+/* INFO BOX */
 .info-box {
     width: 90%;
     max-width: 600px;
@@ -135,6 +136,7 @@ body {
     background: #bc6dbe;
 }
 
+/* QUIZ BOX */
 .quiz-box {
     width: 80%;
     max-width: 700px;
@@ -322,6 +324,7 @@ footer button.show {
     transform: scale(1);
 }
 
+/* RESULT BOX */
 .result-box {
     background: #fff;
     border-radius: 5px;
