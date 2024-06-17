@@ -16,6 +16,7 @@ body {
     flex-direction: column;
     text-align: center;
     color: #3a3a3a;
+    overflow-x: hidden;
 }
 
 ::selection {
