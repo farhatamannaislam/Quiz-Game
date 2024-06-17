@@ -188,6 +188,34 @@ There are no known bugs in the game.
 * [Pixabay](https://pixabay.com/images/search/free%20images/) Used for the website image.
 * [Flaticon](https://www.flaticon.com/free-icon/chef_1980708?term=chef&page=1&position=34&origin=search&related_id=1980708) Used for website favicon.
 
+# Deployment
+
+The site was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+
+* In the Github repository, I navigated to Settings tab.
+* From the source section drop-down menu, I selected the main branch and Save.
+* A few moments later, the page was automatically refreshed and the link to the website was displayed on the right side of the page.
+
+The live link can be found here - [Quiz Game](https://github.com/farhatamannaislam/Quiz-Game)
+
+# Credits
+
+## Media 
+
+Thanks to the designer whose picture I have taken from [Pixabay](https://pixabay.com/)
+
+## Resources Used
+
+* [W3Schools](https://www.w3schools.com/)
+* [Stack Overflow](https://stackoverflow.com/)
+* [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8) I got the basic idea of building a quiz app from GreatStack tutorial.
+* [Ali Aslan](https://www.youtube.com/watch?v=xZXW5SnCiWI) I got the idea of quiz app with timer from Ali Aslan.
+* [Mushroom Quiz](https://evondrus.github.io/MushroomQuiz/) I got a good overview of quiz from Mushroom Quiz.
+
+# Acknowledgments
+
+* My mentor Antonio Rodriguez for his valueable support and advice.
+* Code Institute Slack community and tutors for their helpful responses and feedback.
 
 
 
