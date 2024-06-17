@@ -412,31 +412,6 @@ footer button.show {
     background: white;
 }
 
-/* Page footer*/
-
-.page-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #faebd7;
-    color: #3a3a3a;
-    border-top: 2px solid #3a3a3a;
-    padding: 20px 0;
-}
-
-.page-footer.hide {
-    display: none;
-}
-
-
-.copywrite {
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 400px) {
